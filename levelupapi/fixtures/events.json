@@ -1,0 +1,41 @@
+[
+  {
+    "model": "levelupapi.event",
+    "pk": 1,
+    "fields": {
+      "title": "",
+      "game": 1,
+      "gamer": 1,
+      "location": "",
+      "date": "2021-10-04",
+      "time": "12:00",
+      "attendees": 1
+    }
+  },
+  {
+    "model": "levelupapi.event",
+    "pk": 2,
+    "fields": {
+      "title": "",
+      "game": 2,
+      "gamer": 1,
+      "location": "",
+      "date": "2021-10-04",
+      "time": "7:00",
+      "attendees": 2
+    }
+  },
+  {
+    "model": "levelupapi.event",
+    "pk": 3,
+    "fields": {
+      "title": "",
+      "game": 3,
+      "gamer": 1,
+      "location": "",
+      "date": "2021-10-04",
+      "time": "7:00",
+      "attendees": 3
+    }
+  }
+]
