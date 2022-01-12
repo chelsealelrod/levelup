@@ -164,7 +164,7 @@ class EventSerializer(serializers.ModelSerializer):
     organizer = EventGamerSerializer(many=False)
     game = GameSerializer(many=False)
 
-class Meta:
+    class Meta:
         model = Event
         fields = ('id', 'game', 'organizer',
                   'description', 'date', 'time')
