@@ -10,6 +10,14 @@ class Event(models.Model):
     date = models.DateTimeField(max_length=10)
     time = models.TimeField(auto_now_add=True)
     attendees = models.ManyToManyField("levelupapi.Gamer",
-        related_name="myevents",
+        related_name="attending",
         null=True)
     
+    
+    @property
+    def joined(self):
+        return self.__joined
+
+    @joined.setter
+    def joined(self, value):
+        self.__joined = value
