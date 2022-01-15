@@ -4,3 +4,6 @@ from .gametype import GameTypeView
 from .game import GameView
 from .event import EventGamerSerializer
 from .event import EventView
+from .event import Event
+from .profile import Profile
+from .gamer import get_gamer_profile

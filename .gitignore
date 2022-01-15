@@ -143,38 +143,4 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
-	../.DS_Store
-	../E15-music-lessons/
-	../PenPal-Society/
-	../book-4-house-of-hummus-assessment-chelsealelrod/
-	../brewed-awakenings/
-	../campsmore/
-	../cars-r-us/
-	../coffee_houses_of_nashville/
-	../congressional_representative/
-	../daily-journal/
-	../daily-notes/
-	../dans_diner/
-	../debugging-and-events-assessment-chelsealelrod/
-	../dog-walking/
-	../flowers/
-	../giffygram-group-project-group-1/
-	../github-demo/
-	../kandy-api/
-	../kandykorner/
-	../kennel-api/
-	../kennel-client/
-	../kennels/
-	../kneel-diamonds/
-	../levelup_client/
-	../martins-aquarium/
-	../nuttyshell-e15-group-3/
-	../petes-pizza/
-	../python-rare/
-	../python-server/
-	../sallys_interests/
-	../shopping-list/
-	../sink-repair/
-	../toy-objects/
-	../worst_site/
-
+	
