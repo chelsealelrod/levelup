@@ -35,14 +35,14 @@ class Profile(ViewSet):
     
 class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for gamer's related Django user"""
-class Meta:
+    class Meta:
         model = User
         fields = ('first_name', 'last_name', 'username')
 
 
 class GamerSerializer(serializers.ModelSerializer):
     """JSON serializer for gamers"""
-    user = UserSerializer(many=False)
+    user = UserSerializer(many=False)   
 
     class Meta:
         model = Gamer

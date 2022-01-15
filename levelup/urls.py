@@ -18,10 +18,17 @@ from django.conf.urls import include
 from django.urls import path
 from levelupapi.views import register_user, login_user
 from rest_framework import routers
-from levelupapi.views import GameTypeView
-from levelupapi.views.game import GameView
-from levelupapi.views import GameTypeView, EventView
-from levelupapi.views import Event, Profile
+
+from levelupapi.views import (
+     EventView,
+     GameTypeView,
+     GameView,
+     Profile,
+     get_gamer_profile,
+     login_user,
+     register_user
+)
+
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'gametypes', GameTypeView, 'gametype')
@@ -34,5 +41,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('register', register_user),
     path('login', login_user),
+    path('profile', get_gamer_profile),
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
 ]
