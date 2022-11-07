@@ -1,7 +1,6 @@
 from django.db import models
 
 class Event(models.Model):
-    
     game = models.ForeignKey("levelupapi.Game",
         on_delete=models.DO_NOTHING)
     organizer = models.ForeignKey("levelupapi.Gamer",
@@ -10,8 +9,7 @@ class Event(models.Model):
     date = models.DateTimeField(max_length=10)
     time = models.TimeField(auto_now_add=True)
     attendees = models.ManyToManyField("levelupapi.Gamer",
-        related_name="attending",
-        null=True)
+        related_name="attending")
     
     
     @property
